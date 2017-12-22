@@ -4,6 +4,7 @@
   "description": "simple contracts api",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "mocha"
   },
   "keywords": [

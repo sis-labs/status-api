@@ -16,7 +16,7 @@ const options = parseOptions()
 appLogger.debug('command line successfully parsed, creating the server')
 const server = createServer(Object.assign({}, {name: appName, log: appLogger, version}))
      
-server.listen(serverPort, function () {
+server.listen(process.env.SERVER_PORT || serverPort, function () {
     appLogger.info(`${server.name} listening at ${server.url}`)
 })
 
